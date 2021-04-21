@@ -8,17 +8,16 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	</head>
 	<body>
-		<div>
-			<h1 id="title">TP Javascript : To do list</h1>
-			<input type="text" id="input" placeholder="Que voulez-vous faire?"/>
-			<div>
-				<button type="button" id="add" class="btn-gradient red large" disabled>Ajouter la Todo</button>
+		<div class="container">
+			<h1>To do List</h1>
+			<div id="newtask">
+				<input type="text" id="input" placeholder="Que voulez-vous faire?" value=""/>
+				<button id="push" disabled>Add</button>
 			</div>
-		</div>
-		<div>
-			<p id='p1'></p>
-			<p id='p2'></p>
-			<button id="reset" class="btn-gradient green large" disabled>Clear checked</button>
+		
+			<div id="tasks">
+				<button id="delete" class="delete">Clear todo</button>
+			</div>
 		</div>
 	</body>
 </html>
