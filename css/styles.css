@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 h1 {
-	font-size: 26px;
+	font-size: 36px;
 	color: white;
 	text-align: center;
 	padding-bottom: 40px;
@@ -71,19 +73,19 @@ body {
 }
 
 #newtask button {
-	position: relative;
-	float: right;
-	width: 23%;
-	height: 45px;
-	border-radius: 5px;
-	font-family: "Poppins", sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	background-color: #8052EC;
-	color: #fff;
-	border: none;
-	outline: none;
-	cursor: pointer;
+    position: relative;
+    float: right;
+    width: 23%;
+    height: 60px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #8052EC;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 #tasks {
@@ -121,24 +123,24 @@ body {
 }
 
 #tasks button {
-	position: relative;
-	width: 23%;
-	height: 45px;
-	border-radius: 5px;
-	font-family: "Poppins", sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	background-color: #ec5259;
-	color: #fff;
-	border: none;
-	outline: none;
-	cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #ec5259;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    float: right;
 }
 
 #buttondel {
 	width: 100%;
 	position: relative;
-	margin-top: 40px;
 	padding: 30px 20px;
 	border-radius: 5px;
 }
@@ -261,4 +263,13 @@ a>.fab {
 
 input:focus::-webkit-input-placeholder {
 	color: transparent;
+}
+.fit-picture {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.delete{
+
 }
