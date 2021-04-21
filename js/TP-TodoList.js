@@ -54,9 +54,11 @@ document.querySelector('#push').onclick = function () {
     let checkBox = document.getElementById("myCheck");
     let task = document.querySelectorAll(".task");
         if (checkBox.checked == true){
-            task.classList.toggle('hidden');
+            task.classList.add('hidden');
+			console.log("Hidden");
         } else {
-            task.classList.toggle('completed');
+            task.classList.add('completed');
+			console.log("Completed");
         }
     };
 }
