@@ -51,6 +51,7 @@ btn.addEventListener("click", () => {
 });
 
 // Bouton "reset" supprime les champs p1/p2, supprimer l'input et vider le tableau
+let reset = document.getElementById("reset");
 reset.onclick = function() {
   document.getElementById("p1").innerHTML = "";
   document.getElementById("p2").innerHTML = "";
