@@ -58,7 +58,7 @@ btn.addEventListener("click", function() {
 
     for (i = 0; i < close.length; i++) {
         close[i].onclick = function() {
-            var div = this.parentElement;
+            let div = this.parentElement;
             div.style.display = "none";
         }
     }
@@ -85,22 +85,29 @@ resetbtn.addEventListener("click", e => {
 });
 
 // vérifications
-// Get all elements with class="closebtn"
-var closealert = document.getElementsByClassName("closebtn");
-var o;
+// Obtenez tous les éléments avec class = "closebtn"
+let closealert = document.getElementsByClassName("closebtn");
+let o;
 
-// Loop through all close buttons
+// Boucle à travers tous les boutons de fermeture
 for (o = 0; o < closealert.length; o++) {
-  // When someone clicks on a close button
+  // Quand quelqu'un clique sur un bouton de fermeture
   closealert[o].onclick = function(){
 
-    // Get the parent of <span class="closebtn"> (<div class="alert">)
-    var div = this.parentElement;
+    // Récupère le parent de <span class = "closebtn"> (<div class = "alert">)
+    let div = this.parentElement;
 
-    // Set the opacity of div to 0 (transparent)
+    // Définit l'opacité de div sur 0 (transparent)
     div.style.opacity = "0";
 
-    // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+    // Cachez le div après 600 ms (le même nombre de millisecondes qu'il faut pour disparaître)
     setTimeout(function(){ div.style.display = "none"; }, 600);
   }
 }
+
+// Button supprimer toutes les tâches d'un coup
+let deleteall = document.getElementById("deleteall");
+deleteall.addEventListener("click", e => {
+    let myList = document.getElementById('todolist');
+    myList.innerHTML = '';
+});

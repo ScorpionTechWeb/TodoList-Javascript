@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <h1>Liste de tâches<br>
             TP Javascript réalisée par Victor Dias</h1>
         <img class="fit-picture" src="animation.gif" alt="">
@@ -32,14 +32,15 @@
             </div>
             <!-- END Alerte / Vérifications-->
             <!-- START INPUT & Buttons-->
-            <input autofocus type="text" id="input" placeholder="Contenu de votre tâche...">
-            <span id="add" class="btn btn-success">Ajouter une tâche</span>
-            <span id="delete" class="btn btn-danger">Supprimer la tâche sélectionnée</span>
+            <input autofocus class="form-control" type="text" id="input" placeholder="Contenu de votre tâche...">
+            <span id="add" class="btn btn-success">&#10003; Ajouter une tâche</span>
+            <span id="delete" class="btn btn-warning">&#9747; Supprimer la tâche sélectionnée</span>
+            <span id="deleteall" class="btn btn-danger">&#9747; Supprimer toutes les tâches</span>
             <!-- END INPUT & Buttons-->
         </div>
         <!-- START LIST TODOS-->
-        <ul id="todolist">
-        </ul>
+            <ul id="todolist">
+            </ul>
         <!-- END LIST TODOS-->
     </div>
 </div>

@@ -202,3 +202,10 @@ h1 {
 /* Success button alert*/
 .alert.success {background-color: #4CAF50;}
 .alert.warning {background-color: #ffc107;}
+
+.btn-warning {
+  color: #000;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  margin-top: 10px;
+}
