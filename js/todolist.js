@@ -84,7 +84,7 @@ resetbtn.addEventListener("click", e => {
     })
 });
 
-// vérifications
+// vérifications supplementaires
 // Obtenez tous les éléments avec class = "closebtn"
 let closealert = document.getElementsByClassName("closebtn");
 let o;
