@@ -209,3 +209,8 @@ h1 {
   border-color: #ffc107;
   margin-top: 10px;
 }
+
+.bg-light {
+  background-color: #f8f9fa!important;
+  text-align: center;
+}
